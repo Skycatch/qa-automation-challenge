@@ -4,20 +4,31 @@
   "private": true,
   "proxy": "http://localhost:3001/",
   "devDependencies": {
-    "enzyme": "2.4.1",
-    "react-addons-test-utils": "15.4.0",
-    "react-scripts": "0.8.5"
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "enzyme": "3.10.0",
+    "react-scripts": "3.0.1"
   },
   "dependencies": {
-    "babel-plugin-transform-class-properties": "6.22.0",
-    "react": "15.4.0",
-    "react-dom": "15.4.0",
-    "semantic-ui": "^2.2.10"
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "semantic-ui-css": "^2.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
