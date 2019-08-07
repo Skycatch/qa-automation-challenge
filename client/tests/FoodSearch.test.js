@@ -26,7 +26,7 @@ describe('FoodSearch', () => {
     expect(
       wrapper.find('.remove.icon').props().style,
     ).toEqual(jasmine.objectContaining(
-      { visibility: 'hidden' }
+      { visibility: 'hidden' },
     ));
   });
 
@@ -56,8 +56,8 @@ describe('FoodSearch', () => {
       expect(
         wrapper.find('.remove.icon').props().style,
       ).not.toEqual(jasmine.objectContaining(
-        { visibility: 'hidden' }
-      ));;
+        { visibility: 'hidden' },
+      ));
     });
 
     it('should call `Client.search() with `value`', () => {

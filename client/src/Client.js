@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 function search(query, cb) {
   return fetch(`api/food?q=${query}`, {
-    accept: "application/json"
+    accept: 'application/json',
   })
     .then(checkStatus)
     .then(parseJSON)
